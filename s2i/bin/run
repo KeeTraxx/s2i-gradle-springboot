@@ -7,4 +7,4 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-java -jar -Xms256M -Xmx256M build/libs/*.jar
+java -jar -Xms256m -Xmx256m build/libs/*.jar
