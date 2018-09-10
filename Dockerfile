@@ -4,7 +4,7 @@ FROM openshift/base-centos7
 LABEL maintainer="Khôi Tran <tran@puzzle.ch>"
 
 ENV JAVA_VERSION 1.8.0
-ENV GRADLE_OPTS="-Xmx64m -Dorg.gradle.jvmargs='-Xmx256m -XX:MaxPermSize=64m'"
+ENV GRADLE_OPTS="-Xmx64m -Dorg.gradle.jvmargs='-Xmx256m -XX:MaxPermSize=64m' -Dorg.gradle.daemon=false"
 
 LABEL io.k8s.description="Platform for building gradle spring boot applications" \
       io.k8s.display-name="gradle-spring-boot-builder 0.0.1" \
